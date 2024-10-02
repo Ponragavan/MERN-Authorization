@@ -4,8 +4,9 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { authActions } from "../store";
+axios.defaults.withCredentials = true;
 
 const Login = () => {
   const dispatch = useDispatch();
